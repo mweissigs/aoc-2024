@@ -20,8 +20,8 @@ for (let r = 0; r < matrix.length; r++) {
   }
 }
 
-const priorityComparator = (a, b) => a.cost - b.cost
-const heap = new Heap(priorityComparator)
+// const priorityComparator = (a, b) => a.cost - b.cost
+const heap = new Heap()
 
 heap.push({ cost: 0, r: sr, c: sc, dr: 0, dc: 1 })
 
