@@ -36,11 +36,7 @@ const getTowelsToCreate = combination => {
     if (combination.startsWith(towel)) {
       const remaining = combination.slice(towel.length)
 
-      const match = getTowelsToCreate(remaining)
-      if (match) {
-        matches += match
-        break
-      }
+      matches += getTowelsToCreate(remaining)
     }
   }
 
@@ -53,7 +49,7 @@ let count = 0
 for (const combination of combinations) {
   const solutions = getTowelsToCreate(combination)
   console.log(`Found ${solutions} solutions for ${combination}`)
-  if (solutions > 0) count++
+  count += solutions
 }
 console.log(count)
 
