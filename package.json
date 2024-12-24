@@ -5,6 +5,7 @@
   "type": "module",
   "dependencies": {
     "cross-fetch": "^4.0.0",
+    "fast-cartesian": "^9.0.0",
     "fs-extra": "^11.2.0",
     "heap-js": "^2.5.0",
     "lodash": "^4.17.21",
